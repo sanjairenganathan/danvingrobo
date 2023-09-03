@@ -1,0 +1,363 @@
+body{
+    margin-left: -10rem;
+}
+.robo{
+    z-index: 1;
+}
+.upper{
+    position: relative;
+    margin-top: 1%;
+    margin-left: 48%;
+    z-index: -1;
+}
+.head{
+    background-color: blueviolet;
+    width: 9rem;
+    height: 8rem;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: rotate(180deg);
+}
+.eye1{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    margin-top: 5.9rem;
+}
+.beye{
+    width: 1.3rem;
+    height: 1.3rem;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+}
+.weye{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    background-color:white;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    margin-top: 0.2rem;
+}
+.beye1{
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+}
+.weye2{
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    background-color:white;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+.eye2{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    background-color:white;
+    border-radius:50%;
+    margin-left: 5.9rem;
+    margin-top: 5.9rem;
+}
+.beeye{
+    width: 1.3rem;
+    height: 1.3rem;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+}
+.weeye{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    background-color:white;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    margin-top: 0.2rem;
+}
+.beeye1{
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+}
+.weeye1{
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    background-color:white;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+.hand1{
+    width: 1.5rem;
+    height: 6rem;
+    position: absolute;
+    background-color: blueviolet;
+    border-radius: 5rem;
+    margin-top: 2rem;
+    margin-left: -1.9rem;
+    transform: rotate(90deg);
+}
+.hand2{width: 1.5rem;
+    height: 6rem;
+    position: absolute;
+    background-color: blueviolet;
+    border-radius: 5rem;
+    margin-top: 2rem;
+    margin-left: 9.4rem;
+    transform: rotate(90deg);
+
+}
+.lower{
+    background-color: blueviolet;
+    width: 9rem;
+    height: 10rem;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    margin-left: 48%;
+    margin-top: 1%;
+    transform: rotate(180deg);
+}
+.leg1{
+    width: 1.5rem;
+    height: 6rem;
+    position: absolute;
+    background-color: blueviolet;
+    border-radius: 5rem;
+    margin-top: 9rem;
+    margin-left: 1.5rem;
+}
+.leg2{
+    width: 1.5rem;
+    height: 6rem;
+    position: absolute;
+    background-color:blueviolet;
+    border-radius: 5rem;
+    margin-top: 9rem;
+    margin-left: 5.6rem;
+}
+.robo:hover .head{
+    animation:movehead 2s infinite;
+}
+@keyframes movehead{
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+.robo:hover .lower{
+    animation: movelower 2s infinite;
+}
+@keyframes movelower{
+    from{
+       transform: rotate(180deg); 
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+.robo:hover .hand1{
+    animation: movehand1 2s infinite
+}
+@keyframes movehand1{
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+.robo:hover .hand2{
+    animation: movehand1 2s infinite
+}
+@keyframes movehand2{
+    0%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.robo:hover .leg1{
+    animation: moveleg1 1s infinite;
+}
+@keyframes moveleg1{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.robo:hover .leg2{
+    animation: moveleg2 1s infinite;
+}
+@keyframes moveleg2{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+} 
+.robo:hover .eye1{
+    animation:moveeye1 2s infinite ;
+}
+@keyframes moveeye1{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: black;
+    }
+}
+.robo:hover .beye{
+    animation:movebeye 2s infinite ;
+}
+@keyframes movebeye{
+    from{
+        background-color:black;
+    }
+    to{
+        background-color:white;
+    }
+}
+.robo:hover .weye{
+    animation:moveweye 2s infinite ;
+}
+@keyframes moveweye{
+    from{
+        background-color:white;
+    }
+    to{
+        background-color:white;
+    }
+}
+.robo:hover .beye1{
+    animation:movebeye1 2s infinite ;
+}
+@keyframes movebeye1{
+    from{
+        background-color:black;
+    }
+    to{
+        background-color:white;
+    }
+}
+.robo:hover .weye2{
+    animation:moveweye2 2s infinite ;
+}
+@keyframes moveweye2{
+    from{
+        background-color:white;
+    }
+    to{
+        background-color:white;
+    }
+}
+.robo:hover .eye2{
+    animation:moveeye2 2s infinite ;
+}
+@keyframes moveeye2{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: black;
+    }
+}
+.robo:hover .beeye{
+    animation:movebeeye 2s infinite ;
+}
+@keyframes movebeeye{
+    from{
+        background-color:black;
+    }
+    to{
+        background-color:white;
+    }
+}
+.robo:hover .weeye{
+    animation:moveweeye 2s infinite ;
+}
+@keyframes moveweeye{
+    from{
+        background-color:white;
+    }
+    to{
+        background-color:white;
+    }
+}
+.robo:hover .beeye1{
+    animation:movebeeye1 2s infinite ;
+}
+@keyframes movebeeye1{
+    from{
+        background-color:black;
+    }
+    to{
+        background-color:white;
+    }
+}
+#mouse{
+    margin-top:15rem;
+    margin-left:20rem;
+    margin-bottom: -5rem;
+    z-index:1;
+}
+table,th{
+    width: 100%;
+    margin-left: 0%;
+    background-color: beige;
+    border-style: ridge;
+}
+#mouse{
+    animation: movemouse 2.5s infinite;
+    z-index: 1;
+}
+@keyframes movemouse{
+    from{
+        margin-right: 20rem;
+    }
+    to{
+        margin-left:55rem;
+    }
+}
+.leg1,.leg2,.lower{
+    z-index: -1;
+}
+h2{
+    margin-left: 5rem;
+    margin-bottom: -9rem;
+}
